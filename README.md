@@ -23,3 +23,12 @@ I don't have minikube so will have to install with: winget install Kubernetes.mi
 First step from the tutorial is to wrap the app and the environment in a self-contained image.
 
 
+
+
+docker build -t <dockerhub_username>/<image_name>:<tag> .
+
+
+This how to build the dockerimage. I have a docker hub account so I will use my username. I will name it fastapik8s:v1 for version 1 and the . means to use current directory's dockerfile.
+
+
+
