@@ -1,5 +1,5 @@
 # from the official fastapi + uvicorn + gunicord image
-FROM tiangolo/tiangolo/uvicorn-gunicorn-fastapi:python3.9
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
 #copy the main app to the image from /app 
 COPY ./app /app
