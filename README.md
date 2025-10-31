@@ -1,4 +1,4 @@
-Learning about Kubernetes. Trying to deploy a fastapi app using kubernetes. This repo will provide me as space to take notes and experiment.
+Learning about Kubernetes. Trying to deploy a fastapi app using kubernetes. This repo will provide me a space to take notes and experiment.
 
 
 I'm using this tutorial right now and trying to deploy more apps using Kubernetes. Gotta start somewhere!
