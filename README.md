@@ -60,6 +60,33 @@ Run docker stop with the container name to stop.
 
 
 
+I had problems with running minikube so I had to do:
+
+minikube stop
+
+minikube delete
+
+minikube start --driver=docker
+
+
+
+--driver=docker means that you are creating a k8s cluster inside a docker container which the cluster will then run more docker containers. Mind blown.
+
+
+
+<img width="463" height="121" alt="image" src="https://github.com/user-attachments/assets/143f0a66-8be8-4d15-abe7-d60402f92b69" />
+
+
+Apparently, when running in minikube you don't have to set resources. But if you run in a real cluster you will have to set the CPU and memory.
+
+So there will be two different types of yaml files: one is deployment used to deploy the pods. The other is service used to expose the pods.
+
+<img width="521" height="199" alt="image" src="https://github.com/user-attachments/assets/41596f74-2b5d-4698-b0fd-ecadf876721e" />
+
+<img width="1467" height="880" alt="image" src="https://github.com/user-attachments/assets/c1c2f767-6740-48f7-a7b7-0a1e7c1286d9" />
+
+
+Still a lot to learn but I think this is good enough for this project. It provided me with the basics.
 
 
 
