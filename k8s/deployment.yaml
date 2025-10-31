@@ -1,0 +1,20 @@
+apiVersion: apps/v1 #use the stable version of kubernetes api?
+kind: Deployment # the type of object to manage pods
+metadata:
+  name: pythondata
+spec:
+  replicas: 1 #run 1 copy of the app 
+  selector:
+    matchLabels:
+      app: pythondata #find any pod with the label app pythondata and manage it
+  template:
+    metadata:
+      labels:
+        app: pythondata
+    spec:
+      containers:
+        - name: pythondata #name for the container
+          image: freybeard157/pythondata:latest # the docker image
+          imagePullPolicy: IfNotPresent # don't pull again if it already exists locally
+          ports:
+            - containerPort: 80 #listens to port80
